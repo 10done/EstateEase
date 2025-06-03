@@ -1,0 +1,34 @@
+import React from 'react'
+import "./Extra.css"
+import {HiLocationMarker} from 'react-icons/hi'
+
+export default function Extra() {
+  return (
+    <section className='extra-wrapper'>
+         <div className="padding innerwidth flexCenter extra-container">
+            <div className="flexColStart extra-left">
+                <div className="extra-title">
+                    <div className="blueCircle"></div>
+                    <h1>Discover<br/> Most Perfect 
+                    <br/>Property</h1>
+                </div>
+                <div className="flexColStart extra-des">
+                    <span>Find Beautiful Properties that suite you the best</span>
+                    <span>You will not face any difficulties in finding the best residence for you</span>
+                </div>
+                <div className="flexCenter search-bar">
+                    <HiLocationMarker color="blue" size={25} >
+                        <input type="text" name="" id="" />
+                        <button className="button">Search</button>
+                    </HiLocationMarker>
+                </div>
+                </div>
+            <div className="flexCenter extra-right">
+            <div className="image-container">
+                <img src="./Buildings.jpeg" alt="main image" />
+            </div>
+         </div>
+         </div>
+    </section>
+  )
+}
